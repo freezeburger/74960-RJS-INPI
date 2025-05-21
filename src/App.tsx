@@ -1,13 +1,20 @@
+/* Global Imports */
+import { BrowserRouter, Route, Routes } from 'react-router'
 
+/* Application Level Imports */
 import * as UI from '@/components';
+import * as Views from '@/views';
+
 
 function App() {
 
   return (
-    <>
-      <UI.Button level="primary" action={() => alert('Click')}>Click me</UI.Button>
-      <UI.Button level="primary">Click me</UI.Button>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Views.Home />} />
+        <Route path="/products" element={<Views.Products />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

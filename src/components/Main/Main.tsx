@@ -8,16 +8,18 @@ import * as Hooks from '@/hooks';
 import { MainWrapper } from './Main.styled';
 
 
-interface MainProps { }
+interface MainProps {
+   children: React.ReactNode;
+ }
 
 
-const Main: FC<MainProps> = () => {
+const Main: FC<MainProps> = (props) => {
 
    // Hooks.useGloblaEvent('click',()=> console.log('click event'));
 
    return(
    <MainWrapper data-testid="Main">
-      Main Component
+     {props.children}
    </MainWrapper>
    );
 

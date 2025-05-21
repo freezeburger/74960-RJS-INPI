@@ -1,4 +1,4 @@
 import styled from '@emotion/styled';
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.img`
 `;

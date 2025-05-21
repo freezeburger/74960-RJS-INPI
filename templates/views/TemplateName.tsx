@@ -3,6 +3,7 @@ import  { FC } from 'react';
 
 /* Application Level Imports */
 import * as UI from '@/components';
+import * as Features from '@/containers';
 import * as Hooks from '@/hooks';
 
 /* Local Imports */
@@ -17,9 +18,9 @@ const TemplateName: FC<TemplateNameProps> = () => {
 
    return (
    <div className="TemplateName" data-testid="TemplateName">
-      <UI.BaseHeader>TemplateName</UI.BaseHeader>
-      <UI.BaseMain> TemplateName View</UI.BaseMain>
-      <UI.BaseFooter />
+      <UI.Header>TemplateName</UI.Header>
+      <UI.Main>TemplateName Content</UI.Main>
+      <UI.Footer />
    </div>
    )
 };

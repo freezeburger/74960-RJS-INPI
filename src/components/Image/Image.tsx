@@ -3,22 +3,23 @@ import React, { FC } from 'react';
 
 /* Application Level Imports */
 import * as Hooks from '@/hooks';
+import { Generics } from '@/types';
 
 /* Local Imports */
 import { ImageWrapper } from './Image.styled';
 
 
-interface ImageProps { }
+interface ImageProps {
+   source: Generics.ImageUrl
+}
 
 
-const Image: FC<ImageProps> = () => {
+const Image: FC<ImageProps> = (props) => {
 
    // Hooks.useGloblaEvent('click',()=> console.log('click event'));
 
-   return(
-   <ImageWrapper data-testid="Image">
-      Image Component
-   </ImageWrapper>
+   return (
+      <ImageWrapper data-testid="Image" src={props.source}/>
    );
 
 }
