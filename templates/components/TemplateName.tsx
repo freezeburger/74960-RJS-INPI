@@ -10,11 +10,7 @@ import { TemplateNameWrapper } from './TemplateName.styled';
 
 interface TemplateNameProps { }
 
-/**
- * USAGE: TemplateName description to complete.
- * @example
- * <TemplateName /> 
- */
+
 const TemplateName: FC<TemplateNameProps> = () => {
 
    // Hooks.useGloblaEvent('click',()=> console.log('click event'));
@@ -27,6 +23,11 @@ const TemplateName: FC<TemplateNameProps> = () => {
 
 }
 
+/**
+ * USAGE: TemplateName description to complete.
+ * @example
+ * <TemplateName /> 
+ */
 const TemplateNameMemo = React.memo(TemplateName, (prevProps, nextProps) => {
    /*
    Compare props to prevent unnecessary re-renders
